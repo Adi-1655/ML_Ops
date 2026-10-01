@@ -1,5 +1,9 @@
+import os
 from pathlib import Path
 import joblib
+
+os.environ["MLFLOW_ALLOW_FILE_STORE"] = "true"
+
 import mlflow
 import mlflow.sklearn
 from sklearn.linear_model import LinearRegression
